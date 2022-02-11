@@ -23,17 +23,18 @@
 // Apply this to the team's average scores 
 
 
-const calcAverage = (score1,score2,score3) =>  (score1+score2+score3)/3;
+const calcAverage = (score1,score2,score3) =>  (score1+score2+score3)/3; //Calculate average values
 
-const averageDolphins = calcAverage(10,20,30);
-const averageKoalas = calcAverage(60,30,30);
+const averageDolphins = calcAverage(10,20,30); //Calculate Dolphins average
+const averageKoalas = calcAverage(60,30,30);   // Calculate Koalas average
+
 
 const checkWinner = (avgDolphins,avgKoalas) => (
 
-    avgDolphins >= 2*avgKoalas ? console.log(`Dolphins Wins ${avgDolphins} vs ${avgKoalas}`) :
-    avgKoalas >= 2*avgDolphins ? console.log(`Koalas Wins ${avgKoalas} vs ${avgDolphins}`) : 
+    avgDolphins >= 2*avgKoalas ? console.log(`Dolphins Wins ${avgDolphins} vs ${avgKoalas}`) : //Dolphins win check
+    avgKoalas >= 2*avgDolphins ? console.log(`Koalas Wins ${avgKoalas} vs ${avgDolphins}`) :  // Koalas win check
     null );
 
 
 
-checkWinner(averageDolphins,averageKoalas);
+checkWinner(averageDolphins,averageKoalas); //Result is printed
