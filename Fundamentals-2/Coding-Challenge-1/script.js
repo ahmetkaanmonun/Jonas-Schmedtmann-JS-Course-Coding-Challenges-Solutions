@@ -33,7 +33,7 @@ const checkWinner = (avgDolphins,avgKoalas) => (
 
     avgDolphins >= 2*avgKoalas ? console.log(`Dolphins Wins ${avgDolphins} vs ${avgKoalas}`) : //Dolphins win check
     avgKoalas >= 2*avgDolphins ? console.log(`Koalas Wins ${avgKoalas} vs ${avgDolphins}`) :  // Koalas win check
-    null );
+    console.log("No one wins.") );
 
 
 
